@@ -8,6 +8,6 @@ public class TablicaDwuwymiarowa {
         System.out.println(area [0][0]);
         System.out.println(area [2][1]);
         System.out.println(area [1][1]);
-        
+
     }
 }
