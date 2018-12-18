@@ -1,19 +1,17 @@
-import java.util.SortedMap;
-
 public class Animals {
 
     public static void main(String[] args) {
 
-        Animal[] animals = new Animal[6];
-        animals[0] = new Dog("Burek");
-        animals[1] = new Cat("Filemon");
-        animals[2] = new Pig("Prosiaczek");
-        animals[3] = new Delfin("Błękitek");
-        animals[4] = new Bull("Fernando");
-        animals[5] = new Animal();
+        Animal1[] animal1s = new Animal1[6];
+        animal1s[0] = new Dog1("Burek");
+        animal1s[1] = new Cat1("Filemon");
+        animal1s[2] = new Pig("Prosiaczek");
+        animal1s[3] = new Delfin("Błękitek");
+        animal1s[4] = new Bull("Fernando");
+        animal1s[5] = new Animal1();
 
-        for (Animal animal : animals) {
-            animal.introduce();
+        for (Animal1 animal1 : animal1s) {
+            animal1.introduce();
         }
 
     }
@@ -21,11 +19,11 @@ public class Animals {
 }
 
 
-class Animal {
+class Animal1 {
 
     String name;
 
-    public Animal() {
+    public Animal1() {
         this.name = "bezimienny ";
     }
 
@@ -45,8 +43,8 @@ class Animal {
 }
 
 
-class Dog extends Animal {
-    public Dog(String name) {
+class Dog1 extends Animal1 {
+    public Dog1(String name) {
         this.name = name;
     }
 
@@ -61,14 +59,14 @@ class Dog extends Animal {
     }
 }
 
-class Cat extends Animal {
+class Cat1 extends Animal1 {
 
-    public Cat(String name) {
+    public Cat1(String name) {
         this.name = name;
     }
 }
 
-class Pig extends Animal {
+class Pig extends Animal1 {
     public Pig(String name) {
         this.name = name;
     }
@@ -83,7 +81,7 @@ class Pig extends Animal {
         return " chrum chrum";
     }
 }
-class Delfin extends Animal {
+class Delfin extends Animal1 {
     public Delfin(String name) {
         this.name = name;
     }
@@ -98,7 +96,7 @@ class Delfin extends Animal {
         return " bul bul ";
     }
 }
-class Bull extends Animal {
+class Bull extends Animal1 {
     public Bull(String name) {
         this.name = name;
     }
