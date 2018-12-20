@@ -2,15 +2,15 @@ public class Suma_Ziaren {
     public static void main(String[] args) {
 
 
-        int b = 2;
-        int pola[] = new int[64];
-        for (int a = 1; a<=pola.length; a++){
-
-            int potega = (int)Math.pow(a, b);
-
-            System.out.print(potega+ " ");
+        int c = 2;
+        int[] pola = new int[65];
+        for (int i=1; i<65; i++){
+            pola[i]=i;
+        int liczbaZiaren = ((pola[i] + (i-1))*2)-1;
+        System.out.print(liczbaZiaren + " ");
+        System.out.println(pola[i] + " ");
         }
-        //System.out.println(pola);
+
 
 
 
